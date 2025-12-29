@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Institute of Financial Studies | Meta Tech</title>
+    <meta name="description" content="Learn about the Institute of Financial Studies and our commitment to delivering industry-relevant education in finance, analytics, and automation.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation (Same as index.html) -->
+    <nav class="glass fixed w-full top-0 z-50">
+        <div class="container">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">M</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold gradient-text">Meta Tech</h1>
+                        <p class="text-xs text-gray-400">Institute of Financial Studies</p>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    
+                    <div class="dropdown">
+                        <a href="course-content.html" class="nav-link">Course Content ▾</a>
+                        <div class="dropdown-content">
+                            <a href="power-query.html">Power Query</a>
+                            <a href="excel.html">Advanced Excel</a>
+                            <a href="dax-data-model.html">DAX & Data Modeling</a>
+                            <a href="power-bi-visualisation.html">Power BI Visualization</a>
+                            <a href="power-bi-services.html">Power BI Services</a>
+                            <a href="n8n.html">n8n Automation</a>
+                            <a href="typebot.html">Typebot</a>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    
+                    <button id="theme-toggle" class="theme-toggle">
+                        <span id="sun-icon">☀️</span>
+                        <span id="moon-icon" style="display: none;">🌙</span>
+                    </button>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg glass">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 md:hidden">
+        <div class="glass-strong h-full w-full p-8">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold gradient-text">Menu</h2>
+                <button id="mobile-menu-close" class="p-2 rounded-lg glass">✕</button>
+            </div>
+            <div class="flex flex-col gap-4">
+                <a href="index.html" class="nav-link text-lg">Home</a>
+                <a href="about.html" class="nav-link text-lg">About</a>
+                <a href="course-content.html" class="nav-link text-lg">Course Content</a>
+                <a href="contact.html" class="nav-link text-lg">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="container">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="badge mb-6">Established Excellence in Financial Education</div>
+                <h1 class="mb-6">About the <span class="gradient-text">Institute of Financial Studies</span></h1>
+                <p class="text-xl">Delivering industry-relevant education that prepares professionals for the demands of modern finance, analytics, and strategic decision-making.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="section">
+        <div class="container">
+            <div class="max-w-5xl mx-auto space-y-8">
+                <div class="card card-glass">
+                    <h2 class="mb-4 gradient-text">Our Mission</h2>
+                    <p>The Institute of Financial Studies exists to bridge the gap between traditional finance education and the rapidly evolving demands of data-driven business environments. We equip professionals with practical, immediately applicable skills that enhance career prospects, improve organizational performance, and enable strategic contributions. Our programs are designed by practitioners for practitioners—emphasizing real-world application over theoretical knowledge.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h2 class="mb-4 gradient-text">Our Approach</h2>
+                    <p class="mb-4">We recognize that finance and operations professionals face unique challenges: limited time for training, pressure to deliver immediate results, and the need to learn technologies that integrate seamlessly with existing workflows. Our curriculum reflects these realities.</p>
+                    <p>Rather than teaching isolated tools, we provide integrated learning pathways that mirror actual business processes. Participants learn how data flows from source systems through transformation layers into analytical models and decision-support dashboards. This systems-level understanding ensures that skills translate directly into workplace value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Focus Areas -->
+    <section class="section bg-gradient-to-br from-blue-600/5 to-purple-600/5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Focus Areas</h2>
+                <p>Specialized expertise where finance meets technology</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card card-glass">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="mb-3">Finance & Accounting</h3>
+                    <p>We understand financial workflows, reporting requirements, and compliance frameworks. Our training addresses the specific analytical challenges finance professionals face—from budget consolidation to variance analysis to forecast modeling.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="mb-3">Data Analytics</h3>
+                    <p>Analytics skills are no longer optional in finance and operations. We teach data extraction, transformation, modeling, and visualization using industry-standard tools that integrate with existing corporate systems.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <div class="feature-icon">⚙️</div>
+                    <h3 class="mb-3">Process Automation</h3>
+                    <p>Automation delivers immediate productivity gains. Our programs cover workflow automation, report generation, data integration, and intelligent process design—enabling professionals to eliminate manual work and focus on high-value analysis.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="mb-3">Decision Intelligence</h3>
+                    <p>Data only matters if it informs decisions. We emphasize visualization design, dashboard architecture, and communication strategies that ensure insights drive action at all organizational levels.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="mb-3">Digital Transformation</h3>
+                    <p>Organizations are modernizing finance and operations functions. We prepare professionals to lead this transformation by teaching both technical skills and change management principles.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <div class="feature-icon">📈</div>
+                    <h3 class="mb-3">Strategic Planning</h3>
+                    <p>Finance professionals increasingly contribute to strategy. Our training develops the analytical and communication capabilities required to provide executive-level insights and support long-term planning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose IFS -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose IFS</h2>
+                <p>Distinctive advantages that set our programs apart</p>
+            </div>
+
+            <div class="max-w-5xl mx-auto space-y-6">
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Industry-Aligned Curriculum</h3>
+                    <p>Our courses are developed in consultation with finance leaders, operations executives, and analytics practitioners. We teach what employers need—not what textbooks suggest. Course content reflects current industry practices, emerging technologies, and proven methodologies.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Practical Application Focus</h3>
+                    <p>Theory without application has limited value. Our training emphasizes hands-on projects, real-world case studies, and immediately applicable techniques. Participants leave with working examples they can adapt to their own organizational contexts.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Integrated Learning Pathways</h3>
+                    <p>Most training treats tools in isolation. IFS programs teach integrated workflows that reflect actual business processes—showing how Power Query, Excel, DAX, Power BI, and automation tools work together to solve complex business problems.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Professional Credibility</h3>
+                    <p>IFS certification signals competence to employers. Our programs maintain rigorous standards, require demonstrated proficiency, and prepare participants for professional-level work in finance, operations, and analytics roles.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Continuous Evolution</h3>
+                    <p>Technology changes rapidly. We continuously update course content to reflect new features, emerging best practices, and evolving business requirements—ensuring participants learn current, relevant skills.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Career Impact</h3>
+                    <p>Our programs are designed to advance careers. Participants develop skills that increase marketability, enable promotions, and open access to higher-level roles in analytics, business intelligence, and strategic finance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meta Tech Program -->
+    <section class="section bg-gradient-to-br from-purple-600/5 to-blue-600/5">
+        <div class="container">
+            <div class="max-w-4xl mx-auto">
+                <div class="card card-glass glow-on-hover">
+                    <h2 class="mb-4 gradient-text">The Meta Tech Program</h2>
+                    <p class="mb-4">Meta Tech represents the culmination of IFS expertise in finance technology education. The program integrates seven critical competency areas into a comprehensive curriculum that prepares professionals for the full spectrum of modern analytical work.</p>
+                    
+                    <p class="mb-4">Participants learn to extract and transform data with Power Query, perform advanced analysis in Excel, build sophisticated data models using DAX, create compelling visualizations in Power BI, deploy enterprise solutions through Power BI Services, and automate workflows with n8n and Typebot.</p>
+                    
+                    <p>This integrated approach ensures that graduates understand not just individual tools but the complete analytics ecosystem—positioning them to deliver transformative value in finance, operations, and strategic planning roles.</p>
+                    
+                    <div class="mt-8">
+                        <a href="course-content.html" class="btn btn-primary">Explore Meta Tech Curriculum</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Commitment -->
+    <section class="section">
+        <div class="container">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="mb-6">Our Commitment to Excellence</h2>
+                <p class="text-lg mb-8">The Institute of Financial Studies is committed to delivering education that creates measurable professional impact. We invest in curriculum development, instructor expertise, and learning resources that enable participants to succeed in demanding business environments. Our programs are built for professionals who are serious about advancing their careers and contributing strategically to their organizations.</p>
+                <a href="contact.html" class="btn btn-primary">Connect With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass mt-20 py-12">
+        <div class="container">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">M</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold gradient-text">Meta Tech</h3>
+                            <p class="text-xs text-gray-400">Institute of Financial Studies</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400">Professional training in data analytics, automation, and business intelligence for finance and operations leaders.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About IFS</a></li>
+                        <li><a href="course-content.html" class="text-gray-400 hover:text-white transition">Course Content</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Course Modules</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="power-query.html" class="text-gray-400 hover:text-white transition">Power Query</a></li>
+                        <li><a href="excel.html" class="text-gray-400 hover:text-white transition">Advanced Excel</a></li>
+                        <li><a href="dax-data-model.html" class="text-gray-400 hover:text-white transition">DAX & Data Modeling</a></li>
+                        <li><a href="power-bi-visualisation.html" class="text-gray-400 hover:text-white transition">Power BI Visualization</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 Institute of Financial Studies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

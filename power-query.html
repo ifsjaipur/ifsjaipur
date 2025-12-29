@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Query | Meta Tech Course Module</title>
+    <meta name="description" content="Master Power Query for data extraction, transformation, and automated workflows. Essential skills for finance and operations professionals.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="glass fixed w-full top-0 z-50">
+        <div class="container">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">M</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold gradient-text">Meta Tech</h1>
+                        <p class="text-xs text-gray-400">Institute of Financial Studies</p>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    
+                    <div class="dropdown">
+                        <a href="course-content.html" class="nav-link">Course Content ▾</a>
+                        <div class="dropdown-content">
+                            <a href="power-query.html">Power Query</a>
+                            <a href="excel.html">Advanced Excel</a>
+                            <a href="dax-data-model.html">DAX & Data Modeling</a>
+                            <a href="power-bi-visualisation.html">Power BI Visualization</a>
+                            <a href="power-bi-services.html">Power BI Services</a>
+                            <a href="n8n.html">n8n Automation</a>
+                            <a href="typebot.html">Typebot</a>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    
+                    <button id="theme-toggle" class="theme-toggle">
+                        <span id="sun-icon">☀️</span>
+                        <span id="moon-icon" style="display: none;">🌙</span>
+                    </button>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg glass">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 md:hidden">
+        <div class="glass-strong h-full w-full p-8">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold gradient-text">Menu</h2>
+                <button id="mobile-menu-close" class="p-2 rounded-lg glass">✕</button>
+            </div>
+            <div class="flex flex-col gap-4">
+                <a href="index.html" class="nav-link text-lg">Home</a>
+                <a href="about.html" class="nav-link text-lg">About</a>
+                <a href="course-content.html" class="nav-link text-lg">Course Content</a>
+                <a href="contact.html" class="nav-link text-lg">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="container">
+            <div class="max-w-4xl mx-auto">
+                <div class="badge mb-6">Module 1 | Data Foundation</div>
+                <h1 class="mb-6"><span class="gradient-text">Power Query</span></h1>
+                <p class="text-xl">Master the data transformation engine that powers modern analytics. Learn to extract, clean, and automate data workflows that save hours of manual work and ensure analytical accuracy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="max-w-5xl mx-auto">
+                <div class="card card-glass mb-12">
+                    <h2 class="mb-4 gradient-text">What is Power Query?</h2>
+                    <p class="mb-4">Power Query is Microsoft's data transformation and preparation tool embedded in Excel and Power BI. It enables professionals to connect to virtually any data source—databases, files, web services, cloud platforms—and transform that data into clean, structured formats ready for analysis.</p>
+                    
+                    <p>For finance and operations professionals, Power Query eliminates the manual work of copying, pasting, cleaning, and formatting data from multiple systems. Instead of spending hours manually consolidating reports, you build automated queries that refresh with a single click—ensuring accuracy, saving time, and enabling real-time analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Important -->
+    <section class="section bg-gradient-to-br from-blue-600/5 to-purple-600/5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Power Query Matters</h2>
+                <p>Understanding the strategic importance for finance and operations</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Time Efficiency</h3>
+                    <p>Finance teams spend significant time extracting data from ERP systems, consolidating spreadsheets, and preparing reports. Power Query automates these processes, reducing work that takes hours down to minutes. The time saved translates directly into capacity for higher-value analysis and strategic work.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Error Elimination</h3>
+                    <p>Manual data handling introduces errors—copy-paste mistakes, formula inconsistencies, formatting issues. Power Query eliminates these risks by creating repeatable, documented transformation processes. Once built, queries execute consistently, ensuring analytical accuracy and regulatory compliance.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Data Integration</h3>
+                    <p>Modern organizations store data across multiple systems—ERP, CRM, HRIS, project management tools. Power Query enables professionals to integrate these disparate sources into unified datasets, providing comprehensive views that support cross-functional analysis and informed decision-making.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Scalability</h3>
+                    <p>Processes that work for one data file often break when scaled. Power Query handles large datasets efficiently and accommodates structural changes in source systems. This scalability ensures that analytical workflows remain reliable as business complexity grows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-World Use Cases -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Real-World Applications</h2>
+                <p>How finance and operations professionals use Power Query</p>
+            </div>
+
+            <div class="max-w-5xl mx-auto space-y-6">
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Financial Consolidation</h3>
+                    <p>Controllers managing multi-entity financial reporting use Power Query to extract trial balances from each subsidiary's ERP system, standardize chart of accounts mappings, apply consolidation adjustments, and produce consolidated financial statements. This process—traditionally taking days—executes in minutes with automated queries.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Budget vs. Actual Reporting</h3>
+                    <p>FP&A analysts use Power Query to combine budget data from planning systems with actual results from accounting systems, calculate variances, identify exceptions, and generate executive reports. Automated refreshes ensure leadership always has current performance information without manual intervention.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Operations Metrics</h3>
+                    <p>Operations managers track KPIs across production systems, logistics platforms, and quality databases. Power Query aggregates this data into unified dashboards showing on-time delivery rates, inventory turns, defect rates, and other critical metrics—enabling proactive management and rapid response to issues.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Compliance Reporting</h3>
+                    <p>Accountants preparing regulatory filings use Power Query to extract relevant transactions, apply compliance rules, format data per regulatory requirements, and generate audit trails. The documented transformation process satisfies audit requirements while eliminating manual report preparation.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Vendor Analysis</h3>
+                    <p>Procurement teams analyze spending patterns by combining purchase order data, invoice history, and contract terms. Power Query normalizes vendor names across systems, categorizes spending, identifies savings opportunities, and supports strategic sourcing decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration with Meta Tech -->
+    <section class="section bg-gradient-to-br from-purple-600/5 to-blue-600/5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Integration with Meta Tech</h2>
+                <p>How Power Query connects to other course modules</p>
+            </div>
+
+            <div class="max-w-5xl mx-auto space-y-6">
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Foundation for Excel Analysis</h3>
+                    <p>Power Query prepares clean, structured data that Excel can analyze effectively. Rather than building formulas that reference inconsistent source data, you start with Power Query-prepared datasets that are clean, complete, and properly formatted—enabling sophisticated Excel analysis without data quality concerns.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Data Layer for Power BI</h3>
+                    <p>Every Power BI report begins with data. Power Query serves as Power BI's data layer—extracting, transforming, and loading data into the Power BI data model. Mastery of Power Query enables you to build robust data pipelines that support accurate, performant Power BI solutions.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Automation with n8n</h3>
+                    <p>n8n workflows can trigger Power Query refreshes, monitor data updates, and orchestrate end-to-end analytical processes. Understanding Power Query's capabilities helps you design intelligent automation that maintains data currency and ensures analytical workflows execute reliably.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Topics -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Key Topics Covered</h2>
+                <p>What you'll learn in the Power Query module</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">🔌</div>
+                    <h3 class="mb-3 text-lg">Data Connections</h3>
+                    <p class="text-sm text-gray-400">Connect to Excel files, CSV, databases (SQL Server, Oracle, MySQL), web APIs, SharePoint, Azure, and cloud services. Understand authentication and secure connections.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">🧹</div>
+                    <h3 class="mb-3 text-lg">Data Cleaning</h3>
+                    <p class="text-sm text-gray-400">Remove duplicates, handle null values, trim whitespace, fix data types, split and merge columns, and standardize formats.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">🔄</div>
+                    <h3 class="mb-3 text-lg">Transformations</h3>
+                    <p class="text-sm text-gray-400">Pivot and unpivot tables, group and aggregate data, append and merge queries, create custom columns with conditional logic.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">📅</div>
+                    <h3 class="mb-3 text-lg">Date Intelligence</h3>
+                    <p class="text-sm text-gray-400">Extract date components, calculate periods, create date tables, handle fiscal calendars, and manage time-based analysis requirements.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">⚙️</div>
+                    <h3 class="mb-3 text-lg">Parameters & Functions</h3>
+                    <p class="text-sm text-gray-400">Create reusable parameters, build custom functions, implement dynamic filtering, and design scalable query patterns.</p>
+                </div>
+
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">🚀</div>
+                    <h3 class="mb-3 text-lg">Performance Optimization</h3>
+                    <p class="text-sm text-gray-400">Understand query folding, optimize transformations, manage memory usage, and design efficient data refresh strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Benefits -->
+    <section class="section bg-gradient-to-br from-blue-600/5 to-purple-600/5">
+        <div class="container">
+            <div class="max-w-4xl mx-auto">
+                <div class="card card-glass">
+                    <h2 class="mb-4 gradient-text">Career & Productivity Benefits</h2>
+                    <p class="mb-4">Power Query proficiency delivers immediate workplace value. Professionals who master data transformation become indispensable to their teams—capable of solving data challenges that others find insurmountable. The ability to automate data preparation frees time for analysis, strategic thinking, and higher-value work.</p>
+                    
+                    <p>From a career perspective, Power Query skills are highly marketable. Employers actively seek finance and operations professionals who can work independently with data, eliminate manual processes, and build scalable analytical solutions. These capabilities translate directly into better job opportunities, faster advancement, and higher compensation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="section">
+        <div class="container">
+            <div class="flex justify-between items-center max-w-5xl mx-auto">
+                <a href="course-content.html" class="btn btn-glass">← Back to Overview</a>
+                <a href="excel.html" class="btn btn-primary">Next: Advanced Excel →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass mt-20 py-12">
+        <div class="container">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">M</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold gradient-text">Meta Tech</h3>
+                            <p class="text-xs text-gray-400">Institute of Financial Studies</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400">Professional training in data analytics, automation, and business intelligence for finance and operations leaders.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About IFS</a></li>
+                        <li><a href="course-content.html" class="text-gray-400 hover:text-white transition">Course Content</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Course Modules</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="power-query.html" class="text-gray-400 hover:text-white transition">Power Query</a></li>
+                        <li><a href="excel.html" class="text-gray-400 hover:text-white transition">Advanced Excel</a></li>
+                        <li><a href="dax-data-model.html" class="text-gray-400 hover:text-white transition">DAX & Data Modeling</a></li>
+                        <li><a href="power-bi-visualisation.html" class="text-gray-400 hover:text-white transition">Power BI Visualization</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 Institute of Financial Studies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

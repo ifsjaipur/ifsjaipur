@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Excel | Meta Tech Course Module</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="glass fixed w-full top-0 z-50">
+        <div class="container">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">M</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold gradient-text">Meta Tech</h1>
+                        <p class="text-xs text-gray-400">Institute of Financial Studies</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <div class="dropdown">
+                        <a href="course-content.html" class="nav-link">Course Content ▾</a>
+                        <div class="dropdown-content">
+                            <a href="power-query.html">Power Query</a>
+                            <a href="excel.html">Advanced Excel</a>
+                            <a href="dax-data-model.html">DAX & Data Modeling</a>
+                            <a href="power-bi-visualisation.html">Power BI Visualization</a>
+                            <a href="power-bi-services.html">Power BI Services</a>
+                            <a href="n8n.html">n8n Automation</a>
+                            <a href="typebot.html">Typebot</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <span id="sun-icon">☀️</span>
+                        <span id="moon-icon" style="display: none;">🌙</span>
+                    </button>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg glass">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 md:hidden">
+        <div class="glass-strong h-full w-full p-8">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold gradient-text">Menu</h2>
+                <button id="mobile-menu-close" class="p-2 rounded-lg glass">✕</button>
+            </div>
+            <div class="flex flex-col gap-4">
+                <a href="index.html" class="nav-link text-lg">Home</a>
+                <a href="about.html" class="nav-link text-lg">About</a>
+                <a href="course-content.html" class="nav-link text-lg">Course Content</a>
+                <a href="contact.html" class="nav-link text-lg">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="pt-32 pb-20">
+        <div class="container">
+            <div class="max-w-4xl mx-auto">
+                <div class="badge mb-6">Module 2 | Advanced Analysis</div>
+                <h1 class="mb-6"><span class="gradient-text">Advanced Excel</span></h1>
+                <p class="text-xl">Move beyond basic spreadsheets. Build sophisticated financial models, master complex functions, and automate calculations that drive strategic business decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="max-w-5xl mx-auto">
+                <div class="card card-glass mb-12">
+                    <h2 class="mb-4 gradient-text">Why Advanced Excel Matters</h2>
+                    <p class="mb-4">Excel remains the primary analytical tool for finance and operations professionals worldwide. While basic Excel skills are common, advanced capabilities—dynamic arrays, complex formulas, scenario modeling, automation—differentiate high-performing professionals from their peers.</p>
+                    <p>This module goes beyond VLOOKUP and SUM. You'll learn to build dynamic financial models that update automatically, use advanced statistical and financial functions, create sophisticated what-if analyses, and automate repetitive calculations. These skills enable you to perform complex analysis that would otherwise require specialized software or external consultants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-gradient-to-br from-blue-600/5 to-purple-600/5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Real-World Applications</h2>
+            </div>
+            <div class="max-w-5xl mx-auto space-y-6">
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Financial Modeling</h3>
+                    <p>Build three-statement models that automatically flow from assumptions through income statement, balance sheet, and cash flow statement. Create scenario analyses that compare best-case, base-case, and worst-case outcomes. Design valuation models using DCF, comparable company analysis, and precedent transactions.</p>
+                </div>
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Budget Planning</h3>
+                    <p>Develop budget templates that allocate resources dynamically based on strategic priorities, calculate department allocations using driver-based logic, compare actual performance to budget with variance analysis, and create rolling forecasts that extend planning horizons.</p>
+                </div>
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Operations Analysis</h3>
+                    <p>Analyze production efficiency using statistical process control, optimize inventory levels through EOQ calculations, evaluate capacity utilization across facilities, and identify bottlenecks using throughput analysis.</p>
+                </div>
+                <div class="card card-glass">
+                    <h3 class="mb-3 gradient-text">Data Analysis</h3>
+                    <p>Perform regression analysis to identify trends, use pivot tables for multidimensional analysis, apply statistical functions for data quality assessment, and create dynamic dashboards that update automatically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Key Topics Covered</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">📐</div>
+                    <h3 class="mb-3 text-lg">Advanced Functions</h3>
+                    <p class="text-sm text-gray-400">INDEX-MATCH, XLOOKUP, array formulas, dynamic arrays (FILTER, SORT, UNIQUE), advanced IF logic, date/time functions, text manipulation, and financial functions.</p>
+                </div>
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">📊</div>
+                    <h3 class="mb-3 text-lg">Data Analysis Tools</h3>
+                    <p class="text-sm text-gray-400">Pivot tables, Power Pivot, data tables, Goal Seek, Solver, scenario manager, and statistical analysis tools.</p>
+                </div>
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">💰</div>
+                    <h3 class="mb-3 text-lg">Financial Modeling</h3>
+                    <p class="text-sm text-gray-400">Build integrated financial statements, create valuation models, design sensitivity analyses, and develop forecasting templates.</p>
+                </div>
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">📈</div>
+                    <h3 class="mb-3 text-lg">Charts & Visualization</h3>
+                    <p class="text-sm text-gray-400">Advanced charting, conditional formatting, sparklines, custom number formats, and dashboard design principles.</p>
+                </div>
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">🔧</div>
+                    <h3 class="mb-3 text-lg">Automation</h3>
+                    <p class="text-sm text-gray-400">Macros, VBA basics, custom functions, form controls, and workflow automation within Excel.</p>
+                </div>
+                <div class="card card-glass">
+                    <div class="feature-icon text-xl">✅</div>
+                    <h3 class="mb-3 text-lg">Best Practices</h3>
+                    <p class="text-sm text-gray-400">Error checking, formula auditing, model documentation, version control, and professional spreadsheet design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-gradient-to-br from-purple-600/5 to-blue-600/5">
+        <div class="container">
+            <div class="max-w-4xl mx-auto">
+                <div class="card card-glass">
+                    <h2 class="mb-4 gradient-text">Integration with Meta Tech</h2>
+                    <p class="mb-4">Advanced Excel skills complement every other Meta Tech module. Power Query prepares clean data that Excel analyzes. Excel prototypes calculations that become DAX measures in Power BI. Excel models feed into automated workflows built with n8n. Understanding Excel deeply enables you to work fluidly across the entire analytics ecosystem.</p>
+                    <p>More importantly, Excel remains the lingua franca of business. Executives, board members, and stakeholders understand Excel. The ability to build sophisticated Excel models that clearly communicate analytical insights ensures your work has maximum organizational impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="flex justify-between items-center max-w-5xl mx-auto">
+                <a href="power-query.html" class="btn btn-glass">← Previous: Power Query</a>
+                <a href="dax-data-model.html" class="btn btn-primary">Next: DAX & Data Modeling →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="glass mt-20 py-12">
+        <div class="container">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">M</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold gradient-text">Meta Tech</h3>
+                            <p class="text-xs text-gray-400">Institute of Financial Studies</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400">Professional training in data analytics, automation, and business intelligence.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="course-content.html" class="text-gray-400 hover:text-white transition">Course Content</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Course Modules</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="power-query.html" class="text-gray-400 hover:text-white transition">Power Query</a></li>
+                        <li><a href="excel.html" class="text-gray-400 hover:text-white transition">Advanced Excel</a></li>
+                        <li><a href="dax-data-model.html" class="text-gray-400 hover:text-white transition">DAX & Data Modeling</a></li>
+                        <li><a href="power-bi-visualisation.html" class="text-gray-400 hover:text-white transition">Power BI Visualization</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 Institute of Financial Studies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
